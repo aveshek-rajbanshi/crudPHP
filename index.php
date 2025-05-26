@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styling/index.css">
 </head>
 <body>
+  <!-- git push origin main -->
+
 
   <div class="overlay">
     <div class="overlay-menu">
@@ -34,8 +36,12 @@
       </div>
 
     </div>
+
+<div class="section"></div>
   </div>
    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="scripting/index.js"></script>
 </body>
 </html>

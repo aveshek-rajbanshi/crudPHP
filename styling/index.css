@@ -24,7 +24,7 @@ html,body{
 
 .main h1{
     position: absolute;
-    top: 12%;
+    top: 4%;
     left: 40%;
     font-family: "Futura LtCn BT";
     font-size: 12rem;
@@ -134,9 +134,9 @@ ul li .crudLink{
 
 .img-container{
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 20%;
-    height: 60vh;
+    height: 70vh;
     width: 60vw;
     border-radius: 4px;
     z-index: 9;
@@ -148,4 +148,10 @@ ul li .crudLink{
     width: 100%;
     border-radius: 4px;
     object-fit: cover;
+}
+
+.section,.section2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
 }

@@ -9,13 +9,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data-Entry</title>
+    <title>Data-Create</title>
     <link rel="stylesheet" href="styling/form.css">
 </head>
 <body>
 
    <div class="form-container">
     <div class="actionBtn"><a href="index.php">Back</a></div>
+    <h2 id="form-header">Bio-Form</h2>
     <div class="form-wrapper">
         <form action="#" method="POST">
 

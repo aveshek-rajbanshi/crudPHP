@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.actionBtn{
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b0b0b0;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+
+.actionBtn a{
+    padding: 12px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.actionBtn:hover{
+    border: 1px solid #0808cc;
+}
+
+.actionBtn:hover > a{
+    color: #0808cc;
+}
+
+.data-header-content{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.data-header-content h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: #0808cc;
+}
+
+.data-header-content h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #0808cc;
+}
+
+.table-container{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+table thead tr th{
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    padding: 6px 0px;
+    margin-bottom: 4px;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 580;
+    background-color: #f4f4f4;
+}
+
+table thead tr th:nth-child(1){
+    width: 60px;
+}
+
+table thead tr th:nth-child(2){
+    width: 280px;
+}
+
+table thead tr th:nth-child(3){
+    width: 260px;
+}
+
+table thead tr th:nth-child(4){
+    width: 320px;
+}
+
+table thead tr th:nth-child(5){
+    width: 260px;
+}
+
+table thead tr th:nth-child(6){
+    width: 180px;
+}
+
+tbody tr td{
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 520;
+    padding: 6px 16px;
+   text-align: center;
+}

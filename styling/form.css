@@ -114,17 +114,28 @@ html,body{
    background-color: #fff;
 }
 
-#submitBtn{
+#submitBtn,
+#updateBtn{
     width: 60%;
     margin-left: 20%;
     margin-top: 15px;
     cursor: pointer;
     color: #fff;
     font-weight: 540;
+    text-align: center;
     background-color: #0808cc;
     transition: all 0.5s ease;
 }
 
+#updateBtn{
+    color: #111;
+    background-color: #0ae20a;
+}
+
 #submitBtn:hover{
     background-color: #0a0ae1;
+}
+
+#updateBtn:hover{
+    background-color: #09c609;
 }

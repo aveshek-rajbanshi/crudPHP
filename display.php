@@ -50,7 +50,7 @@ $totaldata = mysqli_num_rows($data);
                        <td>".$query_result['JobTitle']."</td>
                        <td>".$query_result['Email']."</td>
                        <td>".$query_result['Password']."</td>
-                       <td>Update || Delete</td>
+                       <td><a class='updateBtn' href='update.php?id=$query_result[Id]'>Update</a> || <a class='deleteBtn' href='delete.php?id=$query_result[Id]'>Delete</a></td>
                        </tr>";
                     }
                 }

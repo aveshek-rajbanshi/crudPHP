@@ -118,3 +118,16 @@ tbody tr td{
     padding: 6px 16px;
    text-align: center;
 }
+
+.updateBtn, .deleteBtn{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.updateBtn{
+    color: #04cb04;
+}
+
+.deleteBtn{
+    color: crimson;
+}

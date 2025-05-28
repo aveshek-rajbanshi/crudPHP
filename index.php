@@ -1,3 +1,20 @@
+<?php
+
+  session_start();
+
+    $email = $_SESSION['user_email'];
+    $pwd = $_SESSION['user_password'];
+
+    // SESSION AUTHENTICATION
+    if($email == true && $pwd == true){
+
+    }else{
+        header("Location: login.php");
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +35,7 @@
         <br><br>
         <li><a href="create.php" class="crudLink">Create</a></li>
         <li><a href="display.php" class="crudLink">Display</a></li>
+        <li><a href="logout.php" class="crudLink logout">Logout</a></li>
       </ul>
     </div>
   </div>

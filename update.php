@@ -4,6 +4,18 @@
 
    $ids = $_GET['id'];
 
+    session_start();
+
+    $email = $_SESSION['user_email'];
+    $pwd = $_SESSION['user_password'];
+
+    // SESSION AUTHENTICATION
+    if($email == true && $pwd == true){
+
+    }else{
+        header("Location: login.php");
+    }
+
    $selectQuery = "SELECT * FROM person_info WHERE Id = '$ids' ";
    $selectDate = mysqli_query($conn, $selectQuery);
    $update_result = mysqli_fetch_assoc($selectDate);

@@ -10,6 +10,11 @@ html,body{
     background-color: #fff;
 }
 
+body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .form-container{
     position: relative;
     height: 100vh;

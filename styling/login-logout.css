@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.sessionBody{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+    padding: 0 5%;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    z-index: 99;
+}
+
+#authenticateBox{
+    padding: 6px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#authenticateBox .authBtn{
+    margin-right: 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 540;
+    color: #0808cc;
+    padding: 4px;
+    transition: all 0.5s ease;
+}
+
+/* #authenticateBox .authBtn:hover{
+    box-shadow: 0 0 12px #4c4cf490;
+} */
+
+#brand{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0808cc;
+}
+
+.sessionIMGBOX{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.sessionIMGBOX img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+

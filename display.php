@@ -2,6 +2,18 @@
 
 include("connection.php"); 
 
+    session_start();
+
+    $email = $_SESSION['user_email'];
+    $pwd = $_SESSION['user_password'];
+
+    // SESSION AUTHENTICATION
+    if($email == true && $pwd == true){
+
+    }else{
+        header("Location: login.php");
+    }
+
 $fetchQuery = "SELECT * FROM person_info";
 $data = mysqli_query($conn,$fetchQuery);
 $totaldata = mysqli_num_rows($data);

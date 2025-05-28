@@ -2,18 +2,6 @@
 
    include("connection.php"); 
 
-    session_start();
-
-    $email = $_SESSION['user_email'];
-    $pwd = $_SESSION['user_password'];
-
-    // SESSION AUTHENTICATION
-    if($email == true && $pwd == true){
-
-    }else{
-        header("Location: login.php");
-    }
-
 ?>
 
 <!DOCTYPE html>
@@ -21,14 +9,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data-Create</title>
+    <title>create-account</title>
     <link rel="stylesheet" href="styling/form.css">
 </head>
 <body>
 
    <div class="form-container">
-    <div class="actionBtn"><a href="index.php">Back</a></div>
-    <h2 id="form-header">Bio-Form</h2>
+    <div class="actionBtn"><a href="sessionvalid.php">Back</a></div>
+    <h2 id="form-header">Create an Account.</h2>
     <div class="form-wrapper">
         <form action="#" method="POST">
 
@@ -36,12 +24,6 @@
             <input type="text" id="name" name="name" required>
             <label for="name">FullName</label>
            </div>
-           
-           <div class="input-wrapper">
-            <input type="text" id="profession" name="profession" required>
-            <label for="profession">Job-Title</label>
-           </div> 
-
            <div class="input-wrapper">
             <input type="text" id="email" name="email" required>
             <label for="email">Email</label>
@@ -52,7 +34,7 @@
            </div> 
 
            <div class="input-wrapper">
-            <input id="submitBtn" name="submit" type="submit" value="submit">
+            <input id="submitBtn" name="signup" type="submit" value="Sign up">
            </div> 
 
         </form>
@@ -64,21 +46,23 @@
 
 <?php 
 
-  if(isset($_POST['submit'])){
+  if(isset($_POST['signup'])){
 
     $username = $_POST['name'];
-    $jobtitle = $_POST['profession'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    if($username != "" && $jobtitle != "" && $email != "" && $password != ""){
-        $insertQuery = "INSERT INTO person_info (FullName, JobTitle, Email, Password) VALUES('$username','$jobtitle','$email','$password')";
+    if($username != "" && $email != "" && $password != ""){
+        $insertQuery = "INSERT INTO account_info (FullName, Email, Password) VALUES('$username','$email','$password')";
         $query_data = mysqli_query($conn,$insertQuery);
         
         if($query_data){
-            echo "<script>alert('Data Insert Successfully' );</script>";
+            // echo "<script>alert('Data Insert Successfully' );</script>";
+            header("Location:login.php");
         }else{
-            echo "<script>alert('Data Inserted Failed' );</script>";
+            // echo "<script>alert('Data Inserted Failed' );</script>";
+            header("Location:signup.php");
+
         }
 
     }else{

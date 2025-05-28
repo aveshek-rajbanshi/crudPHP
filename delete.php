@@ -4,6 +4,18 @@
 
    $ids = $_GET['id'];
 
+    session_start();
+
+    $email = $_SESSION['user_email'];
+    $pwd = $_SESSION['user_password'];
+
+    // SESSION AUTHENTICATION
+    if($email == true && $pwd == true){
+
+    }else{
+        header("Location: login.php");
+    }
+
    if($conn){
       echo "<script>confirm(`Are you sure want to Delete {$ids} Data ?`)</script>";
 

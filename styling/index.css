@@ -133,6 +133,11 @@ ul li a{
 ul li .crudLink{
     font-size: 1rem;
     font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+ul li .crudLink:hover{
+    color: #0808cc;
 }
 
 

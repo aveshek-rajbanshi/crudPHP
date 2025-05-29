@@ -2,7 +2,7 @@
 
 include("connection.php"); 
 
-    session_start();
+session_start();
 
     $email = $_SESSION['user_email'];
     $pwd = $_SESSION['user_password'];
